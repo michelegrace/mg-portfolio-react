@@ -1,0 +1,22 @@
+@media screen and (max-width: 568px){
+    .employer--list {
+        padding: 0;
+        display: flex;
+        width: 100%;
+    }
+    .employer__list--item {
+        display: flex;
+        width: 25%;
+        flex: 0 0 25%;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+    .employer__list--item>a.active:after, .employer__list--item>a:focus:after, .employer__list--item>a:hover:after {
+        height: 40px;
+        bottom: -40px;
+    }
+    .workHistory {
+        padding: 50px 25px;
+    }
+}

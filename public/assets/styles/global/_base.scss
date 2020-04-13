@@ -1,0 +1,136 @@
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: $body;
+    position: relative;
+    background: $dk-two;
+    color: $offwhite;
+}
+
+main {
+    &.body-hidden {
+        display: none;
+    }
+    &.body-visible {
+        display: block;
+    }
+}
+
+header {
+    width: 100%;
+}
+
+.is-absolute {
+    position: absolute;
+}
+
+.is-relative {
+    position: relative;
+}
+
+.center-element {
+    margin: 0 auto;
+}
+
+.section-padding {
+    padding: 180px 0;
+}
+
+.flex-direction-col {
+    flex-direction: column;
+}
+
+.center-block-content {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    a {
+        @extend h3;
+        letter-spacing: 0.03em;
+    }
+}
+
+.pink-link {
+    color: $pink;
+    &:focus, &:hover {
+        color: lighten($pink, 10%);
+    }
+}
+
+.tags {
+    li {
+        display: inline-block;
+        padding: 0 10px;
+        font-size: 0.85rem;
+        color: $neon;
+        &:first-of-type {
+            padding-left: 0;
+        }
+        &:last-of-type {
+            padding-right: 0;
+        }
+    }
+}
+
+.btn-group {
+    padding-left: 20px;
+}
+
+.external-link {
+    &:focus, &:hover {
+        i {
+            color: $offwhite;
+        }
+    }
+}
+
+#loading {
+    height:100vh;
+    overflow: hidden;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    background: $dk;
+    z-index: 999;
+    transition: 3s all ease;
+    &.loading {
+        display: flex;
+        top: 0;
+        opacity: 1;
+    }
+    &.loaded {
+        opacity: 0;
+        top: -100%;
+    }
+}
+
+.preloader-logo {
+    margin: 0 auto;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    display: block;
+    transform: translate(-50%,-50%) rotate(-10deg);
+    opacity: 1;
+}
+
+svg {
+    height:100%;
+    width:100%;
+    circle {
+        stroke-dasharray: 497;
+        stroke-dashoffset: 500;
+        animation: dash 5s linear;
+    }
+}
+
+@keyframes dash {
+    to {
+      stroke-dashoffset: 97;
+    }
+  }
+

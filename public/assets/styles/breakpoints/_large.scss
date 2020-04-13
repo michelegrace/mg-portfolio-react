@@ -1,0 +1,51 @@
+@media screen and (max-width: 1350px){
+    h1.mega {
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .navbar {
+        display: flex;
+    }
+    .section-padding {
+        padding: 120px 0;
+    }
+    .project__meta--company {
+        flex: 1;
+    }
+    .project__meta--role {
+        flex: .75;
+    }
+    .welcome__intro {
+        top: 29%;
+    }
+    .btn-group {
+        padding-left: 10px;
+    }
+}
+
+@media screen and (max-width: 1087px){
+    .project {
+        .column {
+            padding: .75rem 2.5rem;
+        }
+    }
+    #mainNav{
+        &.mobile-menu {
+            position: absolute;
+            top: -9999px;
+            visibility: hidden;
+            transition: .3s top ease-in-out;
+        }
+    }
+}
+
+@media screen and (max-width: 1060px){
+    h1.mega {
+        font-size: 5em;
+    }
+    .welcome__intro {
+        top: 35%;
+    }
+}

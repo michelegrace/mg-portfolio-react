@@ -1,0 +1,12 @@
+@import 'global/_variables';
+@import 'global/typography';
+@import 'global/base';
+@import 'global/nav';
+
+@import 'sections/welcome';
+@import 'sections/work';
+@import 'sections/about';
+
+@import 'breakpoints/large';
+@import 'breakpoints/small';
+@import 'breakpoints/xsmall';

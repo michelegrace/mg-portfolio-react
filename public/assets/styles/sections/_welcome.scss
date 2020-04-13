@@ -1,0 +1,36 @@
+#welcome {
+    position: relative;
+    transform-style: preserve-3d;
+}
+
+.block {
+    position: relative;
+    background-size: cover;
+    height: 100%;
+    min-height: 100vh;
+    background-blend-mode: multiply;
+    &:hover {
+        a {
+            transition: 1s all ease-in-out;
+            letter-spacing: 0.5em;
+            opacity: .6;
+        }
+    }
+}
+
+.welcome__intro {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    text-align: center;
+    width: 75%;
+    transform: translate(-50%, 0%);
+}
+
+.design {
+    background-image: url('./images/design-block.jpg'), linear-gradient(23deg, $dk-blue, $ultramarine);
+}
+
+.dev {
+    background-image: url('./images/dev-block.jpg'), linear-gradient(23deg, $dk-blue, $ultramarine);
+}

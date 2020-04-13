@@ -1,26 +1,38 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Header from './Header';
+import Welcome from './Welcome';
+import Projects from './Projects';
+import About from './About';
+import Contact from './Contact';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component {
+  constructor(props){
+    super(props);
+    this.state = {
+      activeTabIndex: this.props.defaultActiveTabIndex
+  };
+  this.handleTabClick = this.handleTabClick.bind(this);
+  }
+
+  handleTabClick(tabIndex) {
+    console.log('clicked')
+    this.setState({
+        activeTabIndex: tabIndex === this.state.activeTabIndex ? this.props.defaultActiveTabIndex : tabIndex
+    });
+}
+
+  render(){
+    return (
+      <main className="body-visible">
+        <Header/>
+        <Welcome />
+        <Projects />
+        <About onClick = {()=>this.handleTabClick} />
+        <Contact />
+        <footer className="has-text-centered"><i className="far fa-copyright"></i> 2019 Michele Smolensky / <a href="mailto:michele.smolensky@gmail.com">michele.smolensky@gmail.com</a></footer>
+      </main>
+    );
+  }
 }
 
 export default App;

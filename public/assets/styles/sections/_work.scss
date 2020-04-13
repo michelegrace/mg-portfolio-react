@@ -1,0 +1,60 @@
+.project {
+    padding-top: 60px;
+    padding-bottom: 80px;
+    &:first-of-type {
+        padding-top: 0;
+    }
+    &:last-of-type {
+        padding-bottom: 0;
+    }
+    hr {
+        height: 1px; 
+        background-color: rgba($ultramarine, .7);
+        margin: 1.5rem 0 1rem;
+    }
+    p {
+        font-size: 15px;
+        line-height: 25px;
+        margin-bottom: 45px;
+    }
+    figure {
+        img {
+            max-width: 400px;
+        }
+    }
+}
+
+.project__meta {
+    margin-bottom: 40px;
+}
+
+.project__meta--basic {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.project__meta--company {
+    display: inherit;
+    flex: 1;
+    .external-link {
+        font-size: 1.125rem;
+        color: $pink;
+        padding-left: 4px;
+    }
+}
+
+.project__meta--role {
+    font-size: 0.875rem;
+}
+
+.project__meta--collab {
+    a {
+        color: $offwhite;
+        border-bottom: 1px solid $offwhite;
+        &:focus, &:hover {
+            color: $pink;
+            border-bottom-color: $pink;
+        }
+    }
+}

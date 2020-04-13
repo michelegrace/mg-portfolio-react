@@ -1,0 +1,84 @@
+.logo {
+    font-family: $display;
+    font-size: 2.500em;
+    position: relative;
+    transform: rotate(-7deg);
+    span {
+        display: block;
+        letter-spacing:0.02em;
+        line-height: 1.1em;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: $pink;
+        color: transparent;
+        
+    }
+}
+
+.navbar-logo {
+    top: 28px;
+    left: 58px;
+    span {
+        opacity: 0;
+        transition: .3s opacity ease;
+        &.show-logo {
+            opacity: 1;
+        }
+    }
+}
+
+h1 {
+    font-family: $display;
+    font-size: 2rem;
+    line-height: 1.34;
+    letter-spacing: 0.2px;
+    color: $pink;
+    &.mega {
+        opacity: 0;
+        font-size: 6.375em;
+        max-width: 80%;
+        margin: 0 auto 1rem;
+    }
+}
+
+h2, .h2 {
+    font-family: $display;
+    font-size: 2rem;
+    color: $pink;
+}
+
+h3, .h3{
+    font-size: 1.375rem;
+    font-family: $display;
+    color: $pink;
+    line-height: normal;
+}
+
+a {
+    cursor: pointer!important;
+}
+
+.skills {
+    li {
+        color: $offwhite;
+    }
+}
+
+.intro-text {
+    opacity: 0;
+    font-size: 1.05em;
+    font-weight: bold;
+    letter-spacing: 0.09em;
+    text-align: center;
+    color: $offwhite;
+}
+
+footer {
+    font-size: .8rem;
+    a {
+        color: $pink;
+        &:focus, &:hover {
+            color: $neon;
+        }
+    }
+}
+

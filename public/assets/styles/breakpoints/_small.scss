@@ -1,0 +1,72 @@
+@media screen and (max-width: 800px){
+    .about__portrait {
+        display: block;
+        position: absolute;
+        left: auto;
+        top: -50px;
+        width: 100%;
+    }
+    .about__portrait--img {
+        width: 300px;
+        height: 300px;
+        border-radius: 100%;
+    }
+    .about__content {
+        width: 85% !important;
+        margin: 0 auto;
+        left: auto;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .project__meta {
+        margin-top: 2rem;
+    }
+}
+
+@media screen and (max-width: 766px){
+    .employment {
+        display: block;
+    }
+    .employer--list {
+        padding-right: 0;
+    }
+    .employer__list--item {
+        display: inline-block;
+    }
+    .employer__list--item>a:after {
+
+        left: 50%;
+    }
+    .employer__list--item>a.active:after, .employer__list--item>a:focus:after, .employer__list--item>a:hover:after {
+        height: 55px;
+        width: 1px;
+        bottom: -55px;
+        background: #F433AB;
+    }
+    h1.mega {
+        font-size: 3.5em;
+    }
+    .logo {
+        top: 20px;
+        left: 20px;
+    }
+    .welcome__intro {
+        top: 40%;
+    }
+    .project__meta--basic {
+        display: block;
+    }
+    .project__meta--company h3, .project__meta--company .btn-group {
+        display: inline-block;
+    }
+    .about__content--paragraph {
+        padding: 0 15px; 
+    }
+    .preloader-logo.logo {
+        top: 50%;
+        left: 50%;
+        font-size: 1.1em;
+    }
+}

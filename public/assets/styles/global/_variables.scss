@@ -1,0 +1,24 @@
+@font-face {
+    font-family: 'metal';
+    src: url('./fonts/metal_blackletter_v4-webfont.woff2') format('woff2'),
+         url('./fonts/metal_blackletter_v4-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Overpass+Mono:400,600');
+
+//Fonts
+$display : 'metal';
+$body: 'Overpass Mono';
+
+
+//Colors
+$pink : #F433AB;
+$dk: #15011D;
+$dk-two: #020224;
+$dk-three: #1a0846;
+$dk-blue: #190061;
+$ultramarine: #3500d3;
+$neon: #623CEA;
+$offwhite: #f1e6eb;
