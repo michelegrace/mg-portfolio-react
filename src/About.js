@@ -1,5 +1,6 @@
 import React from 'react';
 import EmploymentTabs from './EmploymentTabs';
+import resume from './images/m_smolensky_resume.pdf'
 
 class About extends React.Component{
 
@@ -42,7 +43,7 @@ class About extends React.Component{
                 </div>
                     <EmploymentTabs onClick={()=>this.props.onClick()} />
                 <div className="column has-text-right">
-                    <a href="public/images/m_smolensky_resume.pdf" className="has-text-right pink-link">Download Resume</a>
+                    <a href={resume} className="has-text-right pink-link">Download Resume</a>
                 </div>
             </div>
         </div>
@@ -52,5 +53,3 @@ class About extends React.Component{
   }
 
 export default About;
-
-    // <p><i>The Biggest Nerd is a subcompany of Practice Cafe, that offers development services to businesses without in-house teams.</i></p>
