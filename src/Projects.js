@@ -141,22 +141,35 @@ class Projects extends React.Component {
             src={swrimg}
             projectDesigner='Staci Maloney'
             designerURL='http://stacimaloney.com/'
-            projectDesc='A custom wordpress theme for Southwest Review, the third longest-running literary quarterly in the United States.'
+            projectDesc='A custom WordPress theme for Southwest Review, the third longest-running literary quarterly in the United States.'
             projectTags={["Gulp", "JS", "Node/NPM", "PHP", "SCSS", "Wordpress"]}
             projectTitle='swr'
             projectURL='http://southwestreview.com/'
             projectRole='Developer'
             projectRepo='https://github.com/michelegrace/swrtheme'></Project>
+
           <Project
             src={tbn}
             projectDesigner=''
             designerURL=''
-            projectDesc='A single page website for a development agency that specializes in serving small business web needs. I focused on incorporating nostalgic imagery from pulp fiction comics to match the tongue-in-cheek branding and emphasize the personable tone of the company.'
+            projectDesc='A single-page website for a development agency that specializes in serving small business web needs. I focused on incorporating nostalgic imagery from pulp fiction comics to match the tongue-in-cheek branding and emphasize the personable tone of the company.'
             projectTags={["Photoshop", "Zeplin"]}
             projectTitle='The Biggest Nerd'
             projectURL='https://thebiggestnerd.com/'
             projectRole='Designer'
             projectRepo=''></Project>
+
+          <Project
+            src={trrs}
+            projectDesigner=''
+            designerURL=''
+            projectDesc='Website for a local roofing company in Texas'
+            projectTags={["Bootstrap", "Node/NPM", "SCSS", "SVG", "Wordpress"]}
+            projectTitle='Texas Roofing and Restoration Services'
+            projectURL='https://texasrrs.net/'
+            projectRole='Designer & Developer'
+            projectRepo=''></Project>
+
           <Project
             src={ayso76}
             projectDesigner=''
@@ -170,29 +183,12 @@ class Projects extends React.Component {
           <Project
             src={barlogic}
             projectDesigner='Julie Evans'
-            designerURL=''
-            projectDesc='A single page website for Barlogic, a company offering a variety of products to help bar owners and restaurateurs run their businesses.'
+            designerURL='http://designsbyjulieatx.com/'
+            projectDesc='A single-page website for Barlogic, a company offering a variety of products to help bar owners and restauranteurs run their businesses.'
             projectTags={["CSS Animation", "JS", "PHP"]}
             projectTitle='Barlogic'
             projectURL='http://barlogic.us'
             projectRole='Developer'
-            projectRepo=''></Project>
-          <Project
-            src={sharpdent}
-            projectDesigner=''
-            designerURL=''
-            projectDesc='A single page website for Barlogic, a company offering a variety of products to help bar owners and restaurateurs run their businesses.'
-            projectTags={[
-              "Bootstrap",
-              "Node/NPM",
-              "Node/NPM",
-              "SCSS",
-              "SVG",
-              "Wordpress",
-            ]}
-            projectTitle='Sharp Family'
-            projectURL='https://cabotdentist.com/'
-            projectRole='Designer & Developer'
             projectRepo=''></Project>
         </div>
       </section>
