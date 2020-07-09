@@ -2,9 +2,8 @@ import React from "react"
 import swrimg from "./images/swr-img.png"
 import ayso76 from "./images/ayso-76.png"
 import barlogic from "./images/barlogic.png"
-import sharpdent from "./images/sharp-dentistry.png"
 import tbn from "./images/the-biggest-nerd-img.png"
-import trrs from "./images/"
+import trrs from "./images/texasrrs.png"
 
 function ProjectRepo(props) {
   return (
